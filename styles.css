@@ -1,0 +1,371 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+}
+
+
+
+/*BARRA NAVEGACION*/
+
+.nav {
+	width: 100%;
+	height: 65px;
+	display: flex;
+	background-color: #fff;
+}
+
+.logo {
+	width: 200px;
+	height: 45px;
+	margin-top: 10px;
+	background: url("./img/logo.png") no-repeat center center/cover;
+}
+
+.nav-menu {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	margin-top: 20px;
+	color: #000;
+	margin-left: 150px;
+
+}
+
+.nav-menu li {
+	list-style: none;
+	padding-right: 100px;
+
+
+}
+
+.nav-menu li a {
+	text-decoration: none;
+	color: #000;
+}
+
+.nav-menu li a:hover {
+	border-bottom: 1px solid #000;
+}
+
+
+.btn-toggle {
+	background: none;
+	border: none;
+	cursor: pointer;
+	font-size: 30px;
+	margin-top: -15px;
+	padding: 0 20px;
+	display: none;
+}
+
+/*PORTADA*/
+
+.portada {
+	width: 100%;
+	height: 100vh;
+	background: url(./img/portada2.png) no-repeat center center/cover;
+	display: inline-block;
+	margin: auto;
+
+}
+
+.portada h1 {
+	color: #fff;
+	font-size: 50px;
+	margin-left: 400px;
+	margin-top: 200px;
+}
+
+.uno {
+	margin: 0 200px;
+}
+
+.portada h4 {
+	color: #fff;
+	font-size: 20px;
+	margin-top: 10px;
+	margin-left: 400px;
+
+}
+
+/*LOGOWP*/
+.logowp {
+	width: 70px;
+	height: 70px;
+	display: inline-block;
+	background: url("./img/logowp.png") no-repeat center center/cover;
+	margin-top: 200px;
+	left: 0;
+	position: fixed;
+	z-index: 90;
+
+}
+
+.section {
+	display: block;
+}
+
+.sobremi {
+	width: 100%;
+	height: 70vh;
+	display: flex;
+	margin-top: 20px;
+}
+
+.foto {
+	width: 100%;
+	height: 300px;
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+	background: url("./img/romi.png") no-repeat center center/cover;
+}
+
+.descripcion h2 {
+	font-size: 30px;
+	margin-bottom: 15px;
+}
+
+.dos {
+	width: 10%;
+	margin-bottom: 15px;
+
+}
+
+/*CONTACTO*/
+
+.contacto {
+	width: 100%;
+	height: 500px;
+	display: flex;
+	margin-bottom: 50px;
+}
+.cont1 {
+	width: 30%;
+	height: 100%; 
+}
+.cont1 h3 {
+	font-size: 50px;
+	margin-top: 20px;
+	margin-left: 30px;
+}
+.tres {
+	width: 5%;
+	margin-left: 30px;
+	margin-bottom: 20px;
+}
+.cont1 p {
+	margin-left: 40px;
+}
+
+.links {
+	display: flex;
+	margin-left: 40px;
+	margin-top: 30px;
+
+}
+
+.links ul li {
+	display: inline-block;
+	margin: 0 5px;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+}
+
+.links ul li a {
+	display: block;
+	padding: 0 10px;
+	font-size: 25px;
+	background: #333;
+	color: #fff;
+	line-height: 50px;
+	border-radius: 5px;
+}
+
+.links ul:hover a {
+	filter: blur(2px);
+}
+.links ul li a:hover {
+	filter: none;
+}
+.links ul li .instagram:hover {
+	background: #e4405f;
+}
+.links ul li .facebook:hover {
+	background: #3b5999;
+}
+
+
+.cont2 {
+	width: 100vh;
+	height: 100%;
+	margin-left: 200px;
+	background: url("./img/contacto.png") no-repeat center center/cover;
+}
+
+
+.foot {
+	width: 100%;
+	height: 100px;
+	background: #202020;
+	color: #505050;
+	margin: auto;
+	text-align: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.foot h4 {
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	margin: auto;
+	padding-top: 50px;
+}
+
+
+
+/*RESPONSIVE*/
+@media (max-width: 768px){
+
+	.nav {
+	width: 100%;
+	height: 55px;
+	display: flex;
+	position: fixed;
+	background-color: #fff;
+	z-index: 100;
+	}
+
+	.logo {
+		width: 200px;
+		height: 45px;
+		margin: auto;
+		background: url("./img/logo.png") no-repeat center center/cover;
+	}
+
+	.nav-menu {
+		margin: 0;
+		flex-direction: column;
+		text-align: center;
+		justify-content: center;
+		color: #000;
+		background-color: #ddd;
+		position: fixed;
+		left: 0;
+		top: 55px;
+		width: 100%;
+		height: calc(100% - 45px);
+		left: 100%;
+		transition: left 0.3s;
+		z-index: 100;
+		
+	}
+
+	.nav-menu li {
+		margin-top: 50px;
+		list-style: none;
+		padding: 20px 0;
+		font-size: 20px;
+
+
+	}
+
+	.nav-menu li a {
+		text-decoration: none;
+		color: #000;
+	}
+
+	.nav-menu li a:hover {
+		border-bottom: 1px solid #000;
+	}
+
+
+	.btn-toggle {
+		background: none;
+		border: none;
+		cursor: pointer;
+		margin-top: 5px;
+		font-size: 30px;
+		display: block;
+	}
+
+	.nav-menu_visible {
+		left: 0;
+	}
+
+
+
+
+
+
+	.portada h1 {
+		margin-left: 50px;
+		margin-top: 250px;
+		font-size: 30px;
+	}
+	.portada h4 {
+		margin-left: 50px;
+		font-size: 15px;
+	}
+
+	.uno {
+		margin: 0 60px;
+	}
+
+	.logowp {
+		margin-top: 150px;
+	}
+
+
+
+
+	.section {
+		display: inline-block;
+		flex-wrap: wrap;
+		flex: 100%;
+	}
+	.sobremi {
+		flex-wrap: wrap;
+		flex: 100%;
+	}
+
+	.foto {
+	width: 100%;
+	height: 300px;
+	margin-top: 20px;
+	margin-left: -10px;
+	margin-bottom: 10px;
+	background: url("./img/romi.png") no-repeat center center/cover;
+}
+
+	.descripcion p {
+		margin: 10px;
+	}
+
+	.cont1 {
+		margin-top: 300px;
+		margin-bottom: -200px;
+	}
+	.cont2 {
+		margin: auto;
+	}
+	.bar {
+		display: block;
+	}
+
+	.contacto {
+		flex-wrap: wrap;
+		flex: 100%;
+	}
+
+	.foot {
+		margin-top: 600px;
+	}
+}
+
